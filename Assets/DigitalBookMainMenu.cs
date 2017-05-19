@@ -7,6 +7,7 @@ public class DigitalBookMainMenu : MonoBehaviour {
 	[SerializeField] GameObject _StartMenu;
 	[SerializeField] GameObject _DownloadMenu;
 	Animator _menuAnimator;
+	[SerializeField] AudioSource _audioSource;
 
 	[SerializeField] Fading _fadeScript;
 
@@ -43,6 +44,9 @@ public class DigitalBookMainMenu : MonoBehaviour {
 
 	public void StartGame(){
 		_menuAnimator.Play ("menu-start");
+		if (!_audioSource.isPlaying) {
+			_audioSource.Play ();
+		}
 		//SceneManager.LoadScene ("Alice_DigitalBook");
 		
 	}
