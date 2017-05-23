@@ -31,7 +31,7 @@ public class DigitalBookMainMenu : MonoBehaviour {
 
 	public void SwitchToStart(){
 		//_StartMenu.SetActive (false);
-		Application.OpenURL("http://petmegames.com/what_is_it_but_a_dream.html");
+		Application.OpenURL("http://petmegames.com/what_is_it_but_a_dream.html#download");
 		//_DownloadMenu.SetActive (true);
 		//_menuAnimator.Play ("menu-start");
 		StartCoroutine(ChangeLevel());

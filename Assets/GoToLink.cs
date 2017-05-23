@@ -8,7 +8,7 @@ public class GoToLink : MonoBehaviour {
 
 
 	public void GoTo() {
-		Application.OpenURL("http://petmegames.com/what_is_it_but_a_dream.html");
+		Application.OpenURL("http://petmegames.com/what_is_it_but_a_dream.html#download");
 //		if (isContinue) {
 //			SceneManager.LoadScene (6);	
 //		}
